@@ -238,3 +238,8 @@ nav ul ul li:last-child a {
     text-align: center;
   }
 }
+
+/*Main section styling*/
+.hero-sect-box {
+    background: url(../AFRAMA/Images/blue\ bg.jpg);
+}
