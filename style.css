@@ -212,6 +212,50 @@ nav ul ul li:last-child a {
   margin: 20px auto;
   max-width: 1200px;
 }
+/*Mobile Stack hero items vertically & center*/
+@media (max-width: 768px) {
+  /* target the hero container (covers variations in your markup) */
+  .hero-section,
+  .hero-sect,
+  .hero-sect-box,
+  .box .hero-section {
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    gap: 18px;
+    padding: 28px 16px;
+    text-align: center;
+    min-height: 50vh;
+  }
+  .hero-section > div,
+  .hero-section div[data-aos],
+  .box .hero-section > div {
+    width: 70%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 12px 8px;
+  }
+   /* reduce icon and heading sizes for small screens */
+  .hero-section i,
+  .hero-section .fa-3x {
+    font-size: 2rem;
+    margin-bottom: 6px;
+  }
+
+  .hero-section h2,
+  .hero-section h2 a {
+    font-size: 1.05rem;
+    margin: 0;
+  }
+
+  
+}
+
 
 .hero-content {
   display: flex;
@@ -253,6 +297,11 @@ nav ul ul li:last-child a {
   text-decoration: none;
   font-size: 1.4rem;
 }
+
+/* Hero-Section Responsiveness*/
+
+  
+
 
 /* About Section */
 .about-section {
